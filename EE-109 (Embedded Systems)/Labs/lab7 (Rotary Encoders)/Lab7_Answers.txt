@@ -1,0 +1,24 @@
+EE 109 - Fall 2021
+Lab 7 - Rotary Encoders and Interrupts
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+
+1. (1 point) Briefly explain why it is undesirable to read the two encoder
+input signals with two separate PINC statements.
+
+  - It is undesirable to read the two input signals with two separate PINC statements because you would rather collect the PINC value that corresponds to both A and B at once. To further elaborate, by making PINC into a variable, the variable will capture a single PINC signal that represents both A and B. However, if you were to call PINC at two instances, there is a strong possibility that by rotating the encoder, it PINC may capture different signals(inaccurate) due to a fast spin.
+
+
+2. (1 point) Briefly explain why updating the LCD display in your ISR could
+lead to undesirable behavior for this lab.
+  - Updating the LCD in the ISR is bad behavior because of the idea that an interrupt cannot interrupt another interrupt. This is a problem if we put the LCD display change in the ISR because, if there was a change in the count, WHILE you are in the interrupt, you will miss that count, and further, miss a-lot of more things. Therefore, that is why we do not do time consuming tasks in the ISR.
+
+
+
+
+
+
+
+

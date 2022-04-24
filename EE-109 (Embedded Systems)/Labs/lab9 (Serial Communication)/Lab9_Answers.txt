@@ -1,0 +1,25 @@
+			     EE 109  - Fall 2021
+			 Lab 9 - Serial Communications
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+
+1. (1 points) Briefly explain why a common GND signal is needed between
+transmitter and receiver devices.
+
+- Communication networks transmit data in terms of voltage difference. Therefore, to measure voltage, there should be some sort of reference point which the common GND signal serves as. So, providing the same common ground is essential. In sum, the voltage exchanged needs some reference point (GND) from sender to receiver.
+
+2. (2 points) The baud rate (e.g. 9600 bps) is the rate at which 1's and 0's
+are transmitted over the serial line.  Briefly explain why the data rate (rate
+at which useful data is transmitted/received) is less than the baud rate even
+with error-free transmission.
+
+- Data rate and Baud Rate are not the same thing as the baud rate refers to the number of signal changes that occur per second, and data rate refers to the rate at which data is transmitted and received. The data rate is less than the baud rate because the higher a baud rate gos, the faster data is sent/received. As long as the data rate is less than baud rate, and the two serial devices are speaking at the same speed, data will be correctly transferred error-free. However, if the two devices are not speaking at the same speed, data can be misinterpreted and missed. That is why we checked the Baud rate in the lab. In these transmissions we also use two signal elements to capture bits as well, as such in the lecture slides.
+
+
+
+
+
+
+

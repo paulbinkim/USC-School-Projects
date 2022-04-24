@@ -1,0 +1,102 @@
+EE 109  - Fall 2021
+Rangefinder
+
+
+Review Question 1 (Cost Analysis):
+
+Assume we are building 1000 units of this system.  Use the provided part
+numbers (see the webpage) and the digikey.com or jameco.com website to find the
+total **cost per unit** (again assume we build a quantity of 1000 units) for
+these range finding systems.  Itemize the part costs (list each part and its
+unit cost when bought in units of 1000) and then show the final cost per unit
+below.  Note: You only need to price the components used in the project (not
+all the components in your lab kit.  Also, you do not need to account for the
+cost of the circuit board or wires. In a real environment we would manufacture
+a PCB (Printed Circuit Board). As an optional task, you can search online for
+PCB manufacturers and what the costs and options are in creating a PCB.
+
+- Individual Cost Analysis (Per 1 Unit)
+	- 10-30 Gauge 5" Wire Stripper = $6.95
+	- Circuit Board = $6.99
+	- USB Type A to Type B Cable (1.5 FT) = $1.49
+	- Arduino = $23
+	- LCD Shield = $9.90
+	- Jumper Wires = $24.95 (Pack of 100)
+	- 1.3k OHM Resistor = $0.1 
+	- 680 OHM Resistor = $0.1 x2
+	- 4 Pack Buttons = $1.60
+	- HCT00N Gate = $0.48
+	- HCT04N Gate = $0.53
+	- Rotary Encoder Mechanical = $3.62
+	- Rotary Knob = $1.49
+	- Buzzer = $0.71
+	- Rangefinder = $3.95
+	- RGB LED's = $9 (Pack of 100)
+
+- Scaled Cost Analysis (Per 1000 Unit) (Large Quantity Quote)
+	- 10-30 Gauge 5" Wire Stripper = $4.49 (Per Unit) (250+)
+	- Circuit Board = $6.4308 (Per Unit) (100+)
+	- USB Type A to Type B Cable (1.5 FT) = $1.10 (Per Unit) (5 Pack)
+	- Arduino = $23 (Per Unit)
+	- LCD Shield = $8.90 (Per Unit) (10+)
+	- Jumper Wires = $24.95 (Pack of 100)
+	- 1.3k OHM Resistor = $0.01133 (Per Unit) (1000+)
+	- 680 OHM Resistor = $0.01133 (Per Unit) (1000+)
+	- 4 Pack Buttons = $1.44 (Per 4 Pack) (100+)
+	- HCT00N Gate = $0.18561 (Per Unit) (1000+)
+	- HCT04N Gate = $0.166 (Per Unit) (1000+)
+	- Rotary Encoder Mechanical = $1.975 (1000+)
+	- Rotary Knob = $0.89 (Per Unit) (1000+)
+	- Buzzer = $0.473 (Per Unit) (1000+)
+	- Rangefinder = $3.95 (Per Unit)
+	- RGB LED's = $9 (Pack of 100)
+
+Total Cost Analysis for 1000 Units of Entire Project (will exclude circuit board, wires, wire strippers)
+	- 1000 USB Type A to Type B Cable = $1100
+	- 1000 Arduino Boards = $23000
+	- 1000 LCD Shields = $8900
+	- 1000 1.3k OHM Resistors = $11.33
+	- 2000 680 OHM Resistors = $22.66 (We need two)
+	- 500 (4 Pack) Buttons = $720 (We need two)
+	- 1000 HCT00N Gates = $185.61 
+	- 1000 HCT04N Gates = $166
+	- 1000 Rotary Encoder Mechanical + Rotary Knob = $2865
+	- 1000 Buzzers = $473
+	- 1000 Rangefinders = $3950
+	- 10 RGB LED's (Packs of 100) = $90
+	// Excluded
+		- //1000 Circuit Boards = $6430.8
+		- //10000 Jumper Wires (Assume 10 per Project) = $2495
+		- //1000 5" Wire Stripper = $4490
+
+
+
+Total Cost of 1000 Units = $41483.6
+
+Per Unit Cost of 1 Unit (1000+) = $41.4836
+
+
+
+Review Question 2 (Health/Safety/Reliability)
+
+Assume this system was to be used in a real industrial monitoring application.
+
+Considering reliability, health, and safety...
+
+ - What scenarios might you suggest testing (considering both HW and SW) before releasing the product for use? 
+	- Some scenarios that I will suggest testing if we were to mass produce this rangefinder circuit board is first reliability. I would check first for any bugs/errors before mass producing so we won't create 10,000+ defect products. Another scenario I would argue to check if safety and if the rangefinder has any harmful effects on health and etc. This comes to no surprise, and many technological devices are tested for things like these (so you won't get sued if something happens). Other scenarios to check is if the circuit works in all weather/temperature conditions, voltage points, and humidity levels. These are all independent variables that could possibly have an effect on the functionality of the circuit.
+
+
+ - How might you make your design more reliable? By reliability we don't just
+   mean keeping it running correctly (though you should consider that), but
+   also how you can detect that a connected component has failed to gracefully
+   handle such situations.  You can consider both HW and SW points of failure,
+   issues related to the operational environment, etc. and how to mitigate
+   those cases.
+	- Some ways to make design more reliable is to first consider that the HW/SW are running correctly. Some ways we can accomplish this goal is to implement error checking in our HW and SW, so that if something goes wrong, the circuit internally resets itself or prompts the user that an error has occurred. We should also add some internal tests such as when your phone gets too hot, it gives you a warning. Our project board should also have safety features like that implemented so it is more safer, reliable, and is perceived as a higher quality project. Temperature checks could mitigate operational environment, and voltage testing could be used to check if something is likely dangerous or not. All in all, in product design, safety is always perceived as a higher quality product. Also in SW, we can implement exceptions and throw errors if we catch something wrong. We would want our biggest selling point to be that we ensure many tests on our system so that customers/consumers deem our product as reliable. We love Apple products because it has been super reliable for many years. We want something like this.
+
+
+
+
+
+
