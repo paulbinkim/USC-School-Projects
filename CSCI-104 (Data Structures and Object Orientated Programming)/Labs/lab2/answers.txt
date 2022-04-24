@@ -1,0 +1,17 @@
+Answers go here!
+
+Problem 1
+- On line 249, invaders[invaderRow][invaderRow] = new Warrior();, the second parameter of invaders was wrong and the fix was to change invaderRow to invaderCol.
+
+Problem 2
+- Line 32, was a problem where the function had two if's statements. The fix was to change the 2nd if to else if. 
+- I think line 27 also had a semicolon that I had to remove which was a syntax error.
+
+Problem 3
+- Line 62, ++colIdx needed to be added, because colIdx was not being iterated.
+
+Problem 4
+- Line 218 and Line 219, the parameters were off. n had to come before m for protectors, and m had to come before n for invaders.
+
+Problem 5
+-  Lines 114 and Lines 118, I had to flip the signs. Logical error.

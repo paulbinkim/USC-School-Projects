@@ -1,0 +1,3 @@
+# Paul Kim, pbkim@usc.edu, Homework 6 (Code)
+
+My final PA for CSCI 104 creates both a Binary Search Tree and an AVL Tree by the use of inheritance. We were given predefined functions to complete, and we successfully create this cool data structure. Including a makefile, type "make", to compile all the files and to get the "scheduling" executable. Since both the BST and AVL Tree are in header files, you would need to include them into a CPP file for use.

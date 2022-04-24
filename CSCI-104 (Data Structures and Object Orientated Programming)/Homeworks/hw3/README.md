@@ -1,0 +1,3 @@
+# Paul Kim, pbkim@usc.edu, Homework 3 (Code)
+
+My program implements a templated d-ary MinHeap for the functionality of a priority queue, to implement an A* search algorithm to play the word game "Doublet." Including a makefile, type "make", to compile all the files and to get the "doublet" executable. Input three command line parameters. The first, idicating the starting word, the second indicating the end word, and the third being a file that contains a list of valid words.

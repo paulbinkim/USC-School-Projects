@@ -1,0 +1,3 @@
+# Paul Kim, pbkim@usc.edu, Homework 4 (Code)
+
+My program implements the RSA encryption/decryption algorithm. Including a makefile, type "make", to compile all the files and to get the "rsa" executable. The executable takes in two command-line parameters: p and q, and the program assumes that p and q are large primes. When run, the program immediately prompts the user for a command, and loops until EXIT is called. Note*, program is only run on inputs that fit inside a long.
