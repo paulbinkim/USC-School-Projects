@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul Kim | Image Puzzle</title>
+	<style>
+		h1 {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#images {
+			width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img-container {
+			float: left;
+			width: 400px;
+			height: 550px;
+
+
+			position: relative;
+		}
+		.img-container > img {
+			width: auto;
+			height: 100%;
+		}
+		.clearfloat {
+			clear: both;
+		}
+		#topleft {
+			position: relative;
+
+			left: 200px;
+		}
+		#midright {
+			position: relative;
+
+			right: 150px;
+		}
+		#bottomleft {
+			position: relative;
+
+			bottom: 30px;
+		}
+		#bottomright {
+			position: relative;
+
+			right: 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Image Puzzle of Myself</h1>
+	<hr></hr>
+
+	<div id="images">
+		<div class="img-container">
+			<img id="topleft" src="img/img1.jpg" alt="pic1">
+		</div>
+
+		<div class="img-container">
+			<img src="img/img2.jpg" alt="pic2">
+		</div>
+
+		<div class="img-container">
+			<img src="img/img3.jpg" alt="pic3">
+		</div>
+
+		<div class="clearfloat"></div>
+
+		<div class="img-container">
+			<img src="img/img4.jpg" alt="pic4">
+		</div>
+
+		<div class="img-container">
+			<img src="img/img5.jpg" alt="pic5">
+		</div>
+
+		<div class="img-container">
+			<img id="midright" src="img/img6.jpg" alt="pic6">
+		</div>
+
+		<div class="clearfloat"></div>
+
+		<div class="img-container">
+			<img id="bottomleft" src="img/img7.jpg" alt="pic7">
+		</div>
+
+		<div class="img-container">
+			<img src="img/img8.jpg" alt="pic8">
+		</div>
+
+		<div class="img-container">
+			<img id="bottomright" src="img/img9.jpg" alt="pic9">
+		</div>
+
+		<div class="clearfloat"></div>
+
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="Drag/dist/draggabilly.pkgd.js"></script>
+
+		<script>
+			var $draggable = $('.img-container').draggabilly({
+			})
+		</script>
+
+</body>
+</html>

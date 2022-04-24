@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul Kim | Landing Page</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
+
+	<style>
+		body {
+			background-image: url(waterbackground.jpeg);
+			background-size: cover;
+
+			font-family: 'Knewave', cursive;		}	
+		
+		h1 {
+			font-size: 4em;
+			text-align: center;
+			color: black;
+
+			text-shadow: 2px 2px #ff0000;
+		}
+		#iFrame {
+			max-width: 80%;
+			margin: auto;
+		}
+		iframe {
+			width: 100%;
+			height: 600px;
+			border: none;
+		}
+
+		h2 {
+			text-shadow: 2px 2px #ff0000;
+			font-size: 3em;
+			text-align: center;
+		}
+		#portraitsection {
+			width: 1100px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+	
+		.Members {
+			width: 230px;
+			height: 400px;
+			margin: 20px;
+			float: left;
+
+			overflow: hidden;
+			position: relative;
+		}
+		.Members > img {
+			width: auto;
+			height: 100%;
+
+			overflow: hidden;
+			position: relative;
+
+			right: 30px;
+		}
+		.overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			background-color: rgba(0,0,0,0.4);
+			color: white;
+
+			text-align: center;
+			padding-top: 190px;
+			
+			display: none;
+
+			font-size: 1.5em;
+		}
+		.Members:hover > .overlay {
+			display: block;
+			font-family: 'Knewave', cursive;
+		}
+		.clearfloat {
+			clear: both;
+		}
+		#narrative {
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-size: 1.5em;
+			margin-bottom: 100px;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Blackpink</h1>
+
+	<div id="iFrame">
+		<iframe src="https://www.youtube.com/embed/yBZKk-cCv64" allowfullscreen></iframe>
+	</div>
+
+
+	<h2>Members</h2>
+
+	<div id="portraitsection">
+		<div class="Members">
+			<img src="jennie.png" alt="jennie">
+			<div class="overlay">Jennie</div>
+		</div>
+		<div class="Members">
+			<img src="jisoo.jpeg" alt="jisoo">
+			<div class="overlay">Jisoo</div>
+		</div>
+		<div class="Members">
+			<img src="rose.jpeg" alt="rose">
+			<div class="overlay">Rose</div>
+		</div>
+		<div class="Members">
+			<img src="lisa.jpeg" alt="lisa">
+			<div class="overlay">Lisa</div>
+		</div>
+
+		<div class="clearfloat"></div>
+	</div>
+
+	<h2>Summary</h2>
+	<div id="narrative">
+		<p>Blackpink is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rose, and Lisa. The group debuted in August 2016. Blackpink is the highest-charting female Korean act on the Billboard Hot 100, peaking at number 13 with "Ice Cream." Blackpink has broken numerous online records throughout their career.</p>
+	</div>
+
+</body>
+</html>

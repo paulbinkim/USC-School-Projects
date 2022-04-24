@@ -1,0 +1,171 @@
+@font-face {
+	font-family: 'Oswald';
+	src: url(Oswald/oswald.ttf);
+}
+img {
+	width: 100%;
+	height: auto;
+}
+#header {
+	width: 1400px;
+	height: 160px;
+	
+	background-color: #765C48;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	border: 4px solid black;
+	margin: auto;
+}
+#main {
+	width: 1200px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+#topleftlogo {
+	float: left;
+	width: 160px;
+	transition: all 1s;
+	transform: rotate(360deg);
+}
+#topleftlogo:hover {
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+#navbar {
+	z-index: 1;
+	float: right;
+	width: 500px;
+	height: 100px;
+	padding-top: 70px;
+	padding-right: 20px;
+	margin: auto;
+}
+#nav ul {
+	list-style: none;
+}
+#nav li {
+	width: 300px;
+	float: right;
+	text-align: right;
+	position: relative;
+	transition: all 1s;
+	transform: rotate(360deg);
+}
+#nav li:hover {
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+#nav li li:hover {
+	background-color: pink;
+}
+#nav a {
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: white;
+
+	font-family: 'Oswald', sans-serif; 
+	font-size: 3em;
+	width: 100%;
+	display: block;
+}	
+#nav ul ul {
+	position: relative;
+	display: none;
+
+	background-color: #5e4623;
+
+	overflow: auto;
+	border: 2px solid black;
+
+}
+#nav li:hover > ul {
+	display: block;
+	font-size: 0.4em;
+	line-height: 25px;
+
+}
+body {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.clearfloat {
+	clear: both;
+}
+h1 {
+	font-size: 55px;
+	text-align: center;
+
+	font-family: 'Oswald', sans-serif; 
+}
+h2 {
+	text-align: center;
+
+	
+	font-family: 'Oswald', sans-serif;
+
+}
+#footer{
+	text-align: center;
+	background-color: #dea38e;
+	color: white;
+
+	height: 50px;
+	line-height: 20px;
+
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: 'Oswald', sans-serif
+}
+#mainsectorcontent {
+	width: 1200px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+
+	background-color: #fffbc9;
+
+	font-family: sans-serif;
+
+	padding-right: 20px;
+	padding-left: 20px;
+
+	border: 2px solid black;
+	border-radius: 50px;
+
+	text-align: center;
+}
+
+#sectorexamples {
+	width: 1400px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+
+	background-color: #d0f0c2;
+
+	font-family: sans-serif;
+
+	border-radius: 50px;
+	border: 2px solid black;
+}
+.examplestock {
+	width: 240px;
+	margin: 20px;
+
+	float: left;
+
+	text-align: center;
+
+	overflow: hidden;
+}

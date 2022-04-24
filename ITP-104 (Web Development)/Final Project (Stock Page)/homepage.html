@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Paul Kim's Final ITP 104 Project, that shares information about the various sectors and example stocks that you can invest in the stock market.">
+
+	<title>Stocks | Homepage</title>
+
+	<link rel="stylesheet" href="main.css">
+
+	<style>
+		body {
+			background: url(img/cash.jpeg);
+			background-size: cover;
+		}
+		#maincontent {
+			width: 600px;
+			height: 1300px;
+			border: 2px solid black;
+			border-radius: 50px;
+			background-color: #c9ffbf;
+
+			padding-left: 40px;
+			padding-right: 40px;
+			float: left;
+
+			font-family: sans-serif;
+		}
+		#rightsection {
+			width: 450px;
+			height: 1075px;
+
+			background-color: #fffbc9;
+
+			border: 2px solid black;
+			border-radius: 50px;
+			float: right;
+			
+			margin-right: auto;
+			margin-top: 225px;
+
+			font-family: sans-serif;
+
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		#graph {
+			width: 400px;
+			position: relative;
+			left: 20px;
+		}
+		#example1 {
+			width: 160px;
+			height: 190px;
+			margin: 20px;
+			overflow: hidden;
+
+			float: left;
+
+			position: relative;
+			left: 15px;
+			bottom: 10px;
+		}
+		#example2 {
+			width: 190px;
+			height: 190px;
+			margin: 20px;
+			overflow: hidden;
+
+			float: left;
+
+			position: relative;
+			left: 30px;
+			bottom: 10px;
+		}
+		#example3 {
+			width: 190px;
+			height: 190px;
+			margin: 20px;
+			overflow: hidden;
+
+			float: left;
+
+			position: relative;
+			bottom: 20px;
+		}
+		#example4 {
+			width: 180px;
+			height: 180px;
+			margin: 20px;
+			overflow: hidden;
+
+			float: left;
+
+			position: relative;
+			bottom: 20px;
+		}
+		#example1 > img {
+			width: 100%;
+			height: auto;
+		}
+		#example2 > img {
+			width: auto;
+			height: 100%;
+		}
+		#example3 > img {
+			width: auto;
+			height: 100%;
+		}
+		#example4 > img {
+			width: 100%;
+			height: auto;
+		}
+		#example1:hover > .overlay {
+			display: block;
+			font-family: 'Oswald', sans-serif;
+		}
+		#example2:hover > .overlay {
+			display: block;
+			font-family: 'Oswald', sans-serif;
+		}
+		#example3:hover > .overlay {
+			display: block;
+			font-family: 'Oswald', sans-serif;
+		}
+		#example4:hover > .overlay {
+			display: block;
+			font-family: 'Oswald', sans-serif;
+		}
+		.overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			background-color: rgba(0,0,0,0.4);
+			color: white;
+
+			text-align: center;
+			padding-top: 85px;
+	
+			display: none;
+		}
+		#bottomsection {
+			width: 1400px;
+			height: 875px;
+			background-color: #765C48;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+			border: 2px solid black;
+			border-radius: 30px;
+
+			font-family: sans-serif;
+		}
+		#sector {
+			font-size: 2.3em;
+			color: white;
+		}
+		.sector4 {
+			width: 330px;
+			height: 200px;
+			overflow: hidden;
+
+			float: left;
+			position: relative;
+			text-align: center;
+			margin: 10px;
+
+			border-radius: 15px;
+		}
+		a > img {
+			width: auto;
+			height: 100%;
+		}
+		.sector3 {
+			width: 300px;
+			height: 200px;
+			overflow: hidden;
+
+			float: left;
+			position: relative;
+			text-align: center;
+			margin-left: 125px;
+
+			border-radius: 15px;
+		}
+		a:hover > .overlay {
+			display: block;
+			font-family: sans-serif;
+		}
+		iframe {
+			width: 100%;
+			height: 600px;
+			border: 2px solid black;
+		}
+		#video {
+			max-width: 80%;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a href="homepage.html">
+			<img id="topleftlogo" src="img/topleftlogo.png" alt="Company Logo">
+		</a>
+
+		<div id="navbar">
+			<div id="nav">	
+				<ul>
+					<li><a href="">Stock Sectors ⍗</a>
+						<ul>
+							<li><a href="materialspage.html">Materials</a></li>
+							<li><a href="industrials.html">Industrials</a></li>
+							<li><a href="financials.html">Financials</a></li>
+							<li><a href="energy.html">Energy</a></li>
+							<li><a href="consumerdis.html">Consumer Discretionary</a></li>
+							<li><a href="informationtech.html">Information Technology</a></li>
+							<li><a href="communication.html">Communication Services</a></li>
+							<li><a href="realestate.html">Real Estate</a></li>
+							<li><a href="healthcare.html">Health Care</a></li>
+							<li><a href="consumerstaples.html">Consumer Staples</a></li>
+							<li><a href="utilities.html">Utility</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+
+	<div id="main">
+		<div id="topsection">
+			<div id="maincontent">
+				<h1>The Stock Market</h1>
+
+				<hr>
+
+				<h2>What is the Stock Market?</h2>
+				<p>The stock market is where investors connect to buy and sell investments — most commonly, stocks, which are shares of ownership in a public company.</p>
+
+				<p>When you need groceries, you go to the supermarket. When you’re ready to buy stocks or mutual funds, you’ll usually buy them online through the stock market, which anyone can access with a brokerage account, robo-advisor or employee retirement plan.</p>
+
+				<p>You don’t have to officially become an “investor” to invest in the stock market — for the most part, it’s open to anyone. And after you purchase your first investment, you’ll join the ranks of investors around the world who are using the stock market to build long-term wealth. But before you do this, it’s critical to learn what the stock market is, how it works and a few introductory investment strategies</p>
+
+				<h2>How does the Stock Market work?</h2>
+				<p>The concept behind how the stock market works is pretty simple. Operating much like an auction house, the stock market enables buyers and sellers to negotiate prices and make trades.</p>
+
+				<p>The stock market works through a network of exchanges — you may have heard of the New York Stock Exchange or the Nasdaq. Companies list shares of their stock on an exchange through a process called an initial public offering, or IPO. Investors purchase those shares, which allows the company to raise money to grow its business. Investors can then buy and sell these stocks among themselves, and the exchange tracks the supply and demand of each listed stock.</p>
+
+				<p>That supply and demand help determine the price for each security, or the levels at which stock market participants — investors and traders — are willing to buy or sell.</p>
+
+				<h2>How do you invest in the Stock Market?</h2>
+				<p>If you have a 401(k) through your workplace, you may already be invested in the stock market. Mutual funds, which are often composed of stocks from many different companies, are common in 401(k)s.</p>
+
+				<p>You can purchase individual stocks through a brokerage account or an individual retirement account like an IRA. Both accounts can be opened at an online broker, through which you can buy and sell investments. The broker acts as the middleman between you and the stock exchanges.</p>
+
+				<p>With any investment, there are risks. But stocks carry more risk — and more potential for reward — than some other securities. While the market's history of gains suggests that a diversified stock portfolio will increase in value over time, stocks also experience sudden dips.</p>
+
+				<p>To build a diversified portfolio without purchasing many individual stocks, you can invest in a type of mutual fund called an index fund or an exchange-traded fund. These funds aim to passively mirror the performance of an index by holding all of the stocks or investments in that index. An index fund could also be categorized into different sectors of the economy.</p>
+
+				<p><em>https://www.nerdwallet.com/article/investing/what-is-the-stock-market</em></p>
+			
+			</div>
+			
+			<div id="rightsection">
+				<h2>Chart of the S&P 500</h2>
+
+				<hr>
+
+				<p>The S&P 500 or Standard & Poor's 500 Index is a market-capitalization-weighted index of the 500 largest U.S. publicly traded companies. The index is widely regarded as the best gauge of large-cap U.S. equities. Other common U.S. stock market benchmarks include the Dow Jones Industrial Average or Dow 30 and the Russell 2000 Index, which represents the small-cap index</p>
+
+
+				<div id="image">
+					<img id="graph" src="img/graphchart.png" alt="S&P 500 Chart">
+				</div>
+
+				<h2>Example Stocks included in the S&P 500</h2>
+				<hr>
+				<div id="example1">
+					<img src="img/apple.svg" alt="Apple">
+					<div class="overlay">Apple</div>
+				</div>
+				<div id="example2">
+					<img src="img/microsoft.png" alt="Microsoft">
+					<div class="overlay">Microsoft</div>
+				</div>
+				<div id="example3">
+					<img src="img/amazon.svg" alt="Amazon">
+					<div class="overlay">Amazon</div>
+				</div>
+				<div id="example4">	
+					<img src="img/jp.jpeg" alt="JP Morgan">
+					<div class="overlay">J.P Morgan</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clearfloat"></div>
+	</div>
+	<div id="bottomsection">
+		<div id="sector">
+			<h2>Click Below to View Sectors!</h2>
+		</div>
+		<hr>
+		<div id="sectorrow1">
+			<div class="sector4">
+				<a href ="materialspage.html">
+					<img src="img/materials.jpeg" alt="Materials">
+					<div class="overlay">Materials</div>
+				</a>
+			</div>
+			<div class="sector4">
+				<a href ="industrials.html">
+					<img src="img/industrials.png" alt="Industrials">
+					<div class="overlay">Industrials</div>
+				</a>
+			</div>
+			<div class="sector4">
+				<a href ="financials.html">
+					<img src="img/financial.jpeg" alt="Financials">
+					<div class="overlay">Financials</div>
+				</a>
+			</div>
+			<div class="sector4">
+				<a href ="energy.html">
+					<img src="img/energy.jpeg" alt="Energy">
+					<div class="overlay">Energy</div>
+				</a>
+			</div>
+		</div>
+		<div id="sectorrow2">
+			<div class="sector4">
+				<a href ="consumerdis.html">
+					<img src="img/consumerd.png" alt="Consumer Discretionary">
+					<div class="overlay">Consumer Discretionary</div>
+				</a>
+			</div>
+			<div class="sector4">
+				<a href ="informationtech.html">
+					<img src="img/info.jpeg" alt="Information Technology">
+					<div class="overlay">Information Technology</div>
+				</a>
+			</div>
+			<div class="sector4">
+				<a href ="communication.html">
+					<img src="img/com.jpeg" alt="Communication Services">
+					<div class="overlay">Communication Services</div>
+				</a>
+			</div>
+			<div class="sector4">
+				<a href ="realestate.html">
+					<img src="img/real.png" alt="Real Estate">
+					<div class="overlay">Real Estate</div>
+				</a>
+			</div>
+		</div>
+		<div id="sectorrow3">
+			<div class="sector3">
+				<a href ="healthcare.html">
+					<img src="img/health.jpeg" alt="Health Care">
+					<div class="overlay">Health Care</div>
+				</a>
+			</div>
+			<div class="sector3">
+				<a href ="consumerstaples.html">
+					<img src="img/cons.jpeg" alt="Consumer Staples">
+					<div class="overlay">Consumer Staples</div>
+				</a>
+			</div>
+			<div class="sector3">
+				<a href ="utilities.html">
+					<img src="img/utl.jpeg" alt="Utilities">
+					<div class="overlay">Utilities</div>
+				</a>
+			</div>
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+
+	<div id="video">
+		<iframe src="https://www.youtube.com/embed/ZCFkWDdmXG8" allowfullscreen></iframe>
+	</div>
+
+
+	<div id="footer">
+		<p><strong>Paul Kim Fall 2020</strong></p>
+	</div>
+
+</body>
+</html>

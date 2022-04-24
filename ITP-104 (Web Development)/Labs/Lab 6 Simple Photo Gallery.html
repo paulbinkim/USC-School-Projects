@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul Kim | Photo Gallery</title>
+	<style>
+	body {
+		background-image: url(img6/background.jpeg);
+	}
+	#main {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#header, #gallery-section {
+		text-align: center;
+		color: white;
+		text-shadow: 0px 0px 10px #000;
+		font-size: 2em;
+	}
+	html {
+		font-family: sans-serif;
+	}
+	.img-container {
+			float: left;
+			width: 800px;
+			height: auto;
+			margin: 5px;
+
+			opacity: 0.7;
+	}
+	.img-container:hover {
+			opacity: 1.0;
+	}
+	.clearfloat {
+		clear: both;
+	}
+	.thumbnail {
+		width: 100%;
+		height: auto;
+	}
+
+	.thumbnail + p {
+		text-align: center;
+		color: white;
+		text-shadow: 0px 0px 10px #000;
+		font-size: 1.5em;
+		/*display: none;*/
+		visibility: hidden;
+	}
+	.thumbnail:hover + p {
+		/*display: block;*/
+		visibility: visible;
+	}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+		<h1>Panda Photo Gallery</h1>
+		</div>
+
+		<div id="gallery">
+				<div class="img-container">
+					<img class="thumbnail" src="img6/panda1.jpeg" alt="pandaintercouse">
+					<p>Panda's having intercouse.</p>
+				</div>
+				
+				<div class="img-container">
+					<img class="thumbnail" src="img6/panda2.png" alt="pandaeating">
+					<p>A panda eating a bamboo stick. </p>
+				</div>
+				
+				<div class="img-container">
+					<img class="thumbnail" src="img6/babypanda.jpeg" alt="babypanda">
+					<p>Cute baby pandas sleeping.</p>
+				</div>
+
+				<div class="img-container">
+					<img class="thumbnail" src="img6/panda3.jpeg" alt="pandatree">
+					<p>A panda climbing a tree.</p>
+				</div>
+				
+				<div class="img-container">
+					<img class="thumbnail" src="img6/panda4.jpeg" alt="scarypanda">
+					<p>Boo! A scary panda.</p>
+				</div>
+				
+				<div class="img-container">
+					<img class="thumbnail" src="img6/panda5.jpeg" alt="sleepypanda">
+					<p>A sleepy panda.</p>
+				</div>
+				
+				<div class="clearfloat"></div>
+		</div>
+	</div>
+
+</body>
+</html>

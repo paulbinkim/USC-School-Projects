@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Paul Kim | Gallery</title>
+		
+		<link rel="stylesheet" href="main.css">
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+		</style>
+
+		<style>
+			
+			#header {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				height: 250px;
+
+				font-size: 1.75em;
+				text-align: center;
+				color: white;
+
+				line-height: 250px;
+				text-shadow: 2px 3px 5px black;
+
+				background-image: url('img/galleryheader.jpeg');
+			}
+			.toprowbox {
+				width: 230px;
+				height: 200px;
+				background-color: #fff7e6;
+				float: right;
+				margin: 10px;
+				overflow: hidden;
+
+				position: relative;
+			}
+			.toprowbox > img {
+				width: auto;
+				height: 100%;
+			}
+			.secondrow1 {
+				width: 200px;
+				height: 250px;
+				background-color: #fff7e6;
+				float: left;
+				margin: 10px;
+
+				overflow: hidden;
+
+				position: relative;
+			}
+			.secondrow3 {
+				width: 200px;
+				height: 250px;
+				background-color: #fff7e6;
+				float: left;
+				margin: 10px;
+
+				overflow: hidden;
+
+				position: relative;
+			}
+			.secondrow1 > img {
+				width: auto;
+				height: 100%;
+			}
+			.secondrow2 {
+				width: 540px;
+				height: 250px;
+				background-color: #fff7e6;
+				float: left;
+				margin: 10px;
+
+				overflow: hidden;
+
+				position: relative;
+			}
+			.secondrow2 > img {
+				width: 100%;
+				height: auto;
+			}
+			.secondrow3 > img {
+				width: 100%;
+				height: auto;
+			}
+			.thirdrow {
+				width: 340px;
+				height: 250px;
+				background-color: #fff7e6;
+				float: left;
+				margin: 10px;
+
+				overflow: hidden;
+
+				position: relative;
+			}
+			.thirdrow > img {
+				width: auto;
+				height: 100%;
+			}
+			.thirdrow2 {
+				width: 260px;
+				height: 250px;
+				background-color: #fff7e6;
+				float: left;
+				margin: 10px;
+
+				overflow: hidden;
+
+				position: relative;
+			}
+			.thirdrow2 > img {
+				width: 100%;
+				height: auto;
+			}
+			.toprowbox:hover > .overlay {
+				display: block;
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+			.overlay {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+
+				background-color: rgba(0,0,0,0.4);
+				color: white;
+
+				text-align: center;
+				padding-top: 85px;
+
+			
+				display: none;
+			}
+			.secondrow1:hover > .overlay {
+				display: block;
+
+				padding-top: 120px;
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+			.secondrow2:hover > .overlay {
+				display: block;
+
+				padding-top: 120px;
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+			.secondrow3:hover > .overlay {
+				display: block;
+
+				padding-top: 120px;
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+			.thirdrow:hover > .overlay {
+				display: block;
+
+				padding-top: 120px;
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+			.thirdrow2:hover > .overlay {
+				display: block;
+
+				padding-top: 120px;
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+		</style>
+	</head>
+<body>
+	<div id="header">
+		<h1>Gallery Page</h1>
+	</div>
+
+	<div id="navbar">
+		<div id="nav">
+			<ul>
+				<li><a href="assignment_06.html">Home</a>
+					<ul>
+						<li><a href="assignment_06.html#1">Christian McCaffery</a></li>
+						<li><a href="assignment_06.html#2">Saquon Barkley</a></li>
+						<li><a href="assignment_06.html#3">Ezekiel Elliot</a></li>
+						<li><a href="assignment_06.html#4">Dalvin Cook</a></li>
+					</ul>
+				</li>
+				<li><a id="active-nav" href="gallery.html">Gallery</a></li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="galleryfirstrow">
+			<div class="toprowbox">
+				<img src="img/pic1.jpeg" alt="Aaron Rodgers">
+				<div class="overlay">Football is Physical</div>
+			</div>
+			<div class="toprowbox">
+				<img src="img/pic2.jpeg" alt="Russell Wilson">
+				<div class="overlay">Football is Tough</div>
+			</div>
+			<div class="toprowbox">
+				<img src="img/pic3.jpeg" alt="The Gronk">
+				<div class="overlay">Football is Fun</div>
+			</div>
+			<div class="toprowbox">
+				<img src="img/pic4.jpeg" alt="Julio Jones">
+				<div class="overlay">Football is Dangerous</div>
+			</div>
+		
+		<div id="gallerysecondrow">
+			<div class="secondrow1">
+				<img src="img/pic6.jpeg" alt="Allen Robinson">
+				<div class="overlay">Allen Robinson</div>
+			</div>
+			<div class="secondrow2">
+				<img src="img/pic7.jpeg" alt="The Rams Offensive Line">
+				<div class="overlay">The Rams Offensive Line</div>
+			</div>
+			<div class="secondrow3">
+				<img src="img/pic8.jpeg" alt="Jarvis Landry">
+				<div class="overlay">Jarvis Landry</div>
+			</div>
+		</div>
+		
+		<div id="gallerythirdrow">
+			<div class="thirdrow">
+				<img src="img/pic5.jpeg" alt="OBJ">
+				<div class="overlay">OBJ</div>
+			</div>
+			<div class="thirdrow2">
+				<img src="img/pic9.jpeg" alt="Dak Prescott">
+				<div class="overlay">Dak Prescott</div>
+			</div>
+			<div class="thirdrow">
+				<img src="img/pic10.jpeg" alt="Deandre Hopkins">
+				<div class="overlay">Deandre Hopkins</div>
+			</div>
+
+			<div class="clearfloat"></div>
+		
+		</div>
+	</div>
+	 </div>
+	<div id="footer">
+		<p><strong>Paul Kim &copy; USCFALL2020</strong></p>
+	</div>
+</body>
+</html>

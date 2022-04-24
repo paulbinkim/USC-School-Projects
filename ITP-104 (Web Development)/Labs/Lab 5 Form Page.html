@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Paul Kim | Form Page</title>
+	<style>
+	#header {
+		text-align: center;
+		font-size: 1em;
+	}
+	#main {
+		width: 700px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 25px;
+		border: 1px solid black;
+		padding: 0px 10px 10px;
+	}
+	body{
+		background-color: #f7d577;
+	}
+	.main-label {
+		display: block;
+		width: 233px;
+		float: left;
+	}
+	.form-row{
+		margin: 20px 0px;
+
+	}
+	button {
+		padding: 10px 40px;
+		border-radius: 10px;
+	}
+	#submit-button {
+		background: pink;
+		color: white;
+		float: right;
+	}
+	</style>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<h1>Boba Order Form</h1>
+	</div>
+
+	<div id="main">
+		<form action="confirmation.html">
+			
+			<div class="form-row">
+				<label for="name-id" class="main-label">Name:</label>
+				<input type="text" id="name-id" placeholder="John Smith">
+			</div>
+			
+			<div class="form-row">
+				<label for="phone-id" class="main-label">Phone Number:</label>
+				<input type="text" id="phone-id" placeholder="(xxx) xxx-xxxx">
+			</div>
+			
+			<div class="form-row">
+				<label>What type of boba would you like?</label>
+				<label><input type="radio" name="boba">Special Honeyboba</label>
+				<label><input type="radio" name="boba">Black Milk Tea</label>
+				<label><input type="radio" name="boba">Green Milk Tea</label>
+				<label><input type="radio" name="boba">Taro Milk Tea</label>
+			</div>
+			
+			<div class="form-row">
+				<label class="main-label">Toppings?</label>
+				<label><input type="checkbox">Tapioca Pearls</label>	
+				<label><input type="checkbox">Grass Jelly</label>	
+				<label><input type="checkbox">Lychee Jelly</label>	
+				<label><input type="checkbox">Extra Sugar</label>	
+			</div>
+			
+			<div class="form-row">
+				<label for="subject-id" class="main-label">How much ice would you like?</label>
+				<select id="subject-id"> <!-- select id must match label for id -->
+					<option disabled selected>Choose one:</option>
+					<option>100%</option>
+					<option>75%</option>
+					<option>50%</option>
+					<option>25%</option>
+					<option>0%</option>
+				</select>
+			</div>
+			
+			<div class="form-row">
+				<label for="msg-id" class="main-label">Special Instructions?</label>
+				<textarea id="msg-id" placeholder="I would like extra honey..."></textarea>
+			</div>
+			
+			<div class="form-row">
+				<label class="main-label"></label>
+				<label>
+				<input type="checkbox">I accept terms & conditions
+				</label>
+			</div>
+
+			<div class="form-row">
+				<button type="submit" id="submit-button">Submit Order</button>
+				<button type="reset">Reset</button>
+			</div>
+		
+		</form>
+	</div>
+</body>
+
+</html>

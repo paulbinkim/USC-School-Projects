@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul Kim | CSS Effects</title>
+	<style>
+		body {
+			background-color: #fffec7;
+		}
+		#main {
+			width: 1200px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			border: 2px solid black;
+
+		}
+		h1 {
+			text-align: center;
+
+			font-family: sans-serif;
+		}
+		.image {
+			width: 185px;
+			height: 350px;
+			position: absolute;
+
+			left: 600px;
+			top: 200px;
+
+			overflow: hidden;
+			border: 2px solid black;
+		}
+		#transition {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#transition .image img {
+			height: 100%;
+			width: auto;
+			position: absolute;
+		}
+		#Choco1cont {
+			transform: rotate(0deg);
+			transition: all 2s;
+		}
+		#Choco2cont {
+			transform: rotate(-10deg);
+			transition: all 2s;
+		}
+		#Choco3cont {
+			transform: rotate(-20deg);
+			transition: all 2s;
+		}
+		#transition:hover #Choco1cont {
+			transform: scale(1) rotate(10deg) translateX(350px) translateY(-70px);
+			transition: all 2s ease;
+		}
+		#transition:hover #Choco2cont {
+			transform: scale(1) rotate(0deg) translateX(150px) translateY(-40px);
+			transition: all 2s ease;
+		}
+		#transition:hover #Choco3cont {
+			transform: scale(1) rotate(-10deg) translateX(-50px) translateY(-20px);
+			transition: all 2s ease;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<h1>My Dog Choco</h1>
+
+		<div id="transition">
+			<div class="image" id="Choco1cont">
+				<img src="choco1.jpeg" alt="Choco1">
+			</div>
+			<div class="image" id="Choco2cont">
+				<img src="choco2.jpeg" alt="Choco2">
+			</div>
+			<div class="image" id="Choco3cont">
+				<img src="choco3.jpeg" alt="Choco3">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul Kim | Image Puzzle</title>
+	<style>
+		h1 {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#images {
+			width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img-container {
+			float: left;
+			width: 400px;
+			height: 550px;
+
+
+			position: relative;
+		}
+		.img-container > img {
+			width: auto;
+			height: 100%;
+		}
+		.img-container > .topleft {
+			position: relative;
+			
+			bottom: 20px;
+			right: 30px;
+			box-shadow: 5px 5px 5px 5px #000;
+		}
+		.img-container > .midright {
+			position: relative;
+			
+			bottom: 40px;
+			right: 30px;
+			box-shadow: 5px 5px 5px 5px #000;
+		}
+		.img-container > .bottomleft {
+			position: relative;
+			
+			bottom: 30px;
+			right: 30px;
+			box-shadow: 5px 5px 5px 5px #000;
+		}
+		.img-container > .bottomright {
+			position: relative;
+			
+			bottom: 30px;
+			left: 30px;
+			box-shadow: 5px 5px 5px 5px #000;
+		}
+		.clearfloat {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<h1>Image Puzzle of Myself</h1>
+	<hr></hr>
+
+	<div id="images">
+		<div class="img-container">
+			<img class="topleft" src="lab_07img/img1.jpg" alt="pic1">
+		</div>
+
+		<div class="img-container">
+			<img src="lab_07img/img2.jpg" alt="pic2">
+		</div>
+
+		<div class="img-container">
+			<img src="lab_07img/img3.jpg" alt="pic3">
+		</div>
+
+		<div class="clearfloat"></div>
+
+		<div class="img-container">
+			<img src="lab_07img/img4.jpg" alt="pic4">
+		</div>
+
+		<div class="img-container">
+			<img src="lab_07img/img5.jpg" alt="pic5">
+		</div>
+
+		<div class="img-container">
+			<img class="midright" src="lab_07img/img6.jpg" alt="pic6">
+		</div>
+
+		<div class="clearfloat"></div>
+
+		<div class="img-container">
+			<img class="bottomleft" src="lab_07img/img7.jpg" alt="pic7">
+		</div>
+
+		<div class="img-container">
+			<img src="lab_07img/img8.jpg" alt="pic8">
+		</div>
+
+		<div class="img-container">
+			<img class="bottomright" src="lab_07img/img9.jpg" alt="pic9">
+		</div>
+
+		<div class="clearfloat"></div>
+
+</body>
+</html>
