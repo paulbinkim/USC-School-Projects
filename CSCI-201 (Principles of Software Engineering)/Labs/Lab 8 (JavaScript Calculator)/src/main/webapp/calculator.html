@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    
+    <style>
+    	* {
+		  box-sizing: border-box;
+		  font-family: "Times New Roman", Times, serif;
+		  font-weight: lighter;
+		}
+		body {
+		  margin-top: 150px;
+		  background-color: white;
+		}
+	    .toprow {
+	    	background-color: #D3D3D3;
+	    }
+	    .equal {
+	    	background-color: #FF7F50;
+	    }
+	    .regular {
+	    	background-color: white;
+	    }
+	    .grid {
+			display: grid;
+		    justify-content: center;
+		    align-content: center;
+		    /* Referenced Grid Template Columns*/
+		    grid-template-columns: repeat(4, 125px);
+		    grid-template-rows: minmax(160px, auto) repeat(5, 100px);
+	    }
+	    .grid > button {
+	      cursor: pointer;
+	      font-size: 2rem;
+	      outline: none;
+	    }
+   	    .grid > button:hover {
+	    	background-color: #a9a9a9;
+	    }
+      	.output{
+	        grid-column: 1 / -1;
+	        background-color: black;
+	        display: flex;
+	        align-items: flex-end;
+	        justify-content: right;
+	        flex-direction: row;
+	        padding: 5px;
+      	}
+      	.output .prev{
+	        color: white;
+	        font-size: 2.5rem;
+      	}
+      	.output .current{
+	        color: white;
+	        font-size: 2.5rem;
+      	}
+    </style>
+    
+    
+  </head>
+  <body>
+    <div class="grid">
+    
+	    <div class="output">
+	    
+		    <div DATAPREV class="prev"></div>
+		    <div DATACURRENT class="current"></div>
+		    
+	    </div>
+	    
+	    <button class="toprow" DATAOPERATION>+</button>
+	    <button class="toprow" DATAOPERATION>-</button>
+	    <button class="toprow" DATAOPERATION>/</button>
+	    <button class="toprow" DATAOPERATION>*</button>
+	    
+	    <button class="regular" DATANUMBER>7</button>
+	    <button class="regular" DATANUMBER>8</button>
+	    <button class="regular" DATANUMBER>9</button>
+	    <button class="regular"></button>
+	    
+	    <button class="regular" DATANUMBER>4</button>
+	    <button class="regular" DATANUMBER>5</button>
+	    <button class="regular" DATANUMBER>6</button>
+	    <button class="regular"></button>
+	    
+	    
+	    <button class="regular" DATANUMBER>1</button>
+	    <button class="regular" DATANUMBER>2</button>
+	    <button class="regular" DATANUMBER>3</button>
+	    <button class="regular" ></button>
+	   
+	   	<button class="regular" DATANUMBER>0</button>
+	   	<button class="regular" ></button>
+	   	<button class="toprow" DATACLEAR>Clear</button>
+	   	<button class="equal" DATAEQUALS>=</button>
+    </div>
+  </body>
+</html>
