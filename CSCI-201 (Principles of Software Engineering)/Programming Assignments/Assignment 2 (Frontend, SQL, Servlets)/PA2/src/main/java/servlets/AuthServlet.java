@@ -15,7 +15,6 @@ import jakarta.servlet.http.HttpSession;
 
 /**
  * Handles user authentication for login and registration.
- * @author Thomas Peters
  */
 @WebServlet("/auth")
 public class AuthServlet extends HttpServlet {
