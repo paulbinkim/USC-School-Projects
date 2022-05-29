@@ -11,3 +11,37 @@ In order to deploy the application, follow the text instructions below:
 9. If you want to change the port the application runs on, in the file CSCI201FinalProject/Full-Stack-Pt.2/react-jwt-auth-master/.env, the port can be specified.
 
 Note: the Spring application must be run on 8080. Use npx kill-port if something else is running on this port.
+
+Tech Stacks:
+React
+Chat Feature (Multi-Threading, Networking), Firebase
+SpringBoot (Backend Feature)
+  Spring Security
+  JPARepository
+  Spring framework
+Bootstrap
+Figma - Design UI/UX
+Git - resource management and control
+Node
+
+Software:
+Eclipse
+Visual Studio
+MySQL
+React
+SpringBoot
+Servlets - used within SpringBoot 
+Javascript
+Java
+JDBC - used within SpringBoot
+Github
+Firebase
+Tomcat - used by SpringBoot
+
+Members:
+Paul Kim
+Matthew Quan
+Slater Gable
+Aditiya Haranhan
+Nicholas Chu
+Aadesh Bajaj
