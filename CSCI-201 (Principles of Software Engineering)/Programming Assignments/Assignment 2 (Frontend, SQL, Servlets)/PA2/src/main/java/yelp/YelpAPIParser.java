@@ -14,7 +14,6 @@ import java.util.Objects;
 
 /**
  * Interfaces with the Yelp API and de-serializes JSON results.
- * @author Thomas Peters
  */
 public class YelpAPIParser {
 	
