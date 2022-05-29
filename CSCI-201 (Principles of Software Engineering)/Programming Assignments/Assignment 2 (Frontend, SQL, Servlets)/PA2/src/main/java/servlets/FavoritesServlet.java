@@ -14,7 +14,6 @@ import yelp.YelpAPIParser;
 
 /**
  * Handles adding and removing restaurants to the favorites list.
- * @author Thomas Peters
  */
 @WebServlet("/favorites")
 public class FavoritesServlet extends HttpServlet {
