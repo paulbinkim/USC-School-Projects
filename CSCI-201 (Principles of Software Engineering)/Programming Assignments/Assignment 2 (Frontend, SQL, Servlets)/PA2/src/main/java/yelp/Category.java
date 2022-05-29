@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * Represents a food category for a Yelp restaurant.
- * @author Thomas Peters
  */
 public class Category implements Serializable {
 
