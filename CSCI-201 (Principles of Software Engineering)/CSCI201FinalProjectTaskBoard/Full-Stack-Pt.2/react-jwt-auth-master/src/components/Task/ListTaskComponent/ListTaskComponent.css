@@ -1,0 +1,30 @@
+#listTable{
+    width: 100%;
+    margin: auto;
+}
+
+td, th{
+    border-right: solid 1px black;
+    text-align: center;
+}
+
+tr{
+    border-bottom: solid 1px #6A6A6A;
+    text-align: center;
+}
+
+#AddTaskBtn {
+    margin-left: 1032px;
+    background-color: #8DC2FF;
+    color: black;
+}
+
+#btn123 {
+    background-color: #8DC2FF;
+    color: black;
+}
+
+#btn234 {
+    background-color: #FF7759;
+    color: black;
+}
