@@ -12,7 +12,7 @@ In order to deploy the application, follow the text instructions below:
 
 Note: the Spring application must be run on 8080. Use npx kill-port if something else is running on this port.
 
-Tech Stacks:
+**Tech Stacks:**
 
 React
 
@@ -35,7 +35,7 @@ Git - resource management and control
 Node
 
 
-Software:
+**Software:**
 
 Eclipse
 
@@ -62,7 +62,7 @@ Firebase
 Tomcat - used by SpringBoot
 
 
-Members:
+**Members:**
 Paul Kim
 Matthew Quan
 Slater Gable
