@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * Represents a Yelp restaurant
- * @author Thomas Peters
  */
 public class Restaurant implements Serializable {
 
