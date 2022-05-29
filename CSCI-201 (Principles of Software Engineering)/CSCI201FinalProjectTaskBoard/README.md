@@ -13,30 +13,54 @@ In order to deploy the application, follow the text instructions below:
 Note: the Spring application must be run on 8080. Use npx kill-port if something else is running on this port.
 
 Tech Stacks:
+
 React
+
 Chat Feature (Multi-Threading, Networking), Firebase
+
 SpringBoot (Backend Feature)
-  Spring Security
-  JPARepository
-  Spring framework
+
+  -Spring Security
+  
+  -JPARepository
+  
+  -Spring framework
+  
 Bootstrap
+
 Figma - Design UI/UX
+
 Git - resource management and control
+
 Node
 
+
 Software:
+
 Eclipse
+
 Visual Studio
+
 MySQL
+
 React
+
 SpringBoot
+
 Servlets - used within SpringBoot 
+
 Javascript
+
 Java
+
 JDBC - used within SpringBoot
+
 Github
+
 Firebase
+
 Tomcat - used by SpringBoot
+
 
 Members:
 Paul Kim
