@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uber Page</title>
+</head>
+<style>
+    /*<!--   Custom Font Import   -->*/
+    @font-face {
+        font-family: 'Uber';
+        src: url('/static/fonts/UberMoveMedium.otf')
+    }
+    body {
+        background-color: black;
+        color: white;
+        font-family: Uber;
+    }
+    h1, h2, p {
+        text-align: center;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+    #RegularContainer{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #MLContainer{
+        margin-top: 50px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #Return {
+        margin-top: 50px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    img {
+        border: 2px solid white;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+    }
+    button {
+        background-color: white;
+        border: 2px solid white;
+        text-align: center;
+        color: black;
+        width: 150px;
+        height: 50px;
+    }
+    button:hover {
+        opacity: 80%;
+    }
+    #Graph {
+        width: 50%;
+        height: 50%;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+
+    <h1>Welcome {{message}}</h1>
+    <h2> {{message1}}</h2>
+
+    <div id="RegularContainer">
+        <h1>Uber Data in Boston, MA </h1>
+        <img src="{{uberimage}}" alt="UberLogo">
+        <h2>Uber Rides from 11/26/2018 - 12/18/2018 in Boston, MA (Non-ML)</h2>
+        <img id="Graph" src="{{uberGraph}}" alt="UberGraph">
+    </div>
+
+
+
+    <div id="Return">
+        <form action="/ReturnHome" method="POST">
+            <p>Click to Return to Homepage</p>
+            <button type="submit">Return Homepage</button>
+        </form>
+    </div>
+
+</body>
+</html>

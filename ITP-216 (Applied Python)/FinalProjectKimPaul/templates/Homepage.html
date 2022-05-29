@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<style>
+    body {
+        background-image: url('/static/images/background.jpeg')
+    }
+    h1, h2, p {
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    #h11 {
+        margin-top: 50px;
+    }
+    .Container{
+        margin-top: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    .Uber {
+        width: 50%;
+        float: left;
+    }
+    .Lyft {
+        width: 50%;
+        float: right;
+    }
+    .note{
+        margin-top: 450px;
+    }
+    img {
+        border: 2px solid black;
+        height: 350px;
+        width: 350px;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+    }
+    button:hover {
+        opacity: 80%;
+    }
+    #Username {
+        margin-top: 0px;
+        text-align: center;
+    }
+    input {
+        width: 20%;
+    }
+</style>
+<body>
+
+    <h1>Welcome {{message}}</h1>
+    <h2> {{message1}}</h2>
+
+    <h1 id="h11">ITP-216: Uber/Lyft Data Analysis Boston, MA</h1>
+    <h2>Please click on which ride-sharing company you would like to analyze</h2>
+
+    <p>
+        *Data includes relevant information from 11/26/2018 - 12/18/2018 in Boston, MA*
+    </p>
+
+    <div id="Username">
+        <p>Please Provide a Name if you wish!</p>
+        <form action="/ProvideUsername" method="POST">
+            <input type="username" name="username" placeholder="Name">
+            <input type="message" name="message" placeholder="Personalized Message">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="Container">
+        <div class="Uber">
+            <form action="/Uber" method="POST">
+                <button type="submit"><img src="{{uberimage}}" alt="UberLogo"></button>
+            </form>
+        </div>
+
+        <div class="Lyft">
+            <form action="/Lyft" method="POST">
+                <button type="submit"><img src="{{lyftimage}}" alt="LyftLogo"></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="note">
+        <p>*Please Click Either on the Uber or Lyft Logo!*</p>
+        <p>Paul Kim, pbkim@usc.edu, Spring 2022, ITP 216</p>
+    </div>
+
+</body>
+</html>
