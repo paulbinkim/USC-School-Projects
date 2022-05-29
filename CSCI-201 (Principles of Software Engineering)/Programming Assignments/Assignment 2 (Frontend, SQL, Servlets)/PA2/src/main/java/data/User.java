@@ -2,7 +2,6 @@ package data;
 
 /**
  * Represents a authenticated user with an email and password.
- * @author Thomas Peters
  */
 public class User {
 
