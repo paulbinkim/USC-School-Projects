@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * Represents a restaurant address
- * @author Thomas Peters
  */
 public class Location implements Serializable {
 
