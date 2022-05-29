@@ -13,7 +13,6 @@ import yelp.YelpAPIParser;
 
 /**
  * Handles searching for restaurants using YelpAPI queries.
- * @author Thomas Peters
  */
 @WebServlet("/search")
 public class SearchServlet extends HttpServlet {
