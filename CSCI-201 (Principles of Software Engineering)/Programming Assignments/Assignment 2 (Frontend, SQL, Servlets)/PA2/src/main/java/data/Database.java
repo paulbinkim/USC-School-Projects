@@ -14,7 +14,6 @@ import yelp.YelpAPIParser;
 
 /**
  * Handles interacts with the MySQL database.
- * @author Thomas Peters
  */
 public class Database {
 	
