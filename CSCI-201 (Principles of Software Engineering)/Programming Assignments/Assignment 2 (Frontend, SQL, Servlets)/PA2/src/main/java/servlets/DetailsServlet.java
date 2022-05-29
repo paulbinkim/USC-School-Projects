@@ -13,7 +13,6 @@ import yelp.YelpAPIParser;
 
 /**
  * Handles searching for restaurant details by Yelp ID.
- * @author Thomas Peters
  */
 @WebServlet("/details")
 public class DetailsServlet extends HttpServlet {
