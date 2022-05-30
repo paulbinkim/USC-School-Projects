@@ -1,4 +1,4 @@
-# TaskBoard-CSCI201FinalProject
+# TaskBoard-CSCI201FinalProject (Full-Stack Pt.2)
 
 **Tech Stacks:**
 React, Chat Feature (Multi-Threading, Networking), Firebase, Java, SpringBoot (Backend Feature), Bootstrap, Figma - Design UI/UX, Git - resource management and control, Node
